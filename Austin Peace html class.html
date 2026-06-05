@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML on Android - By @Austin peace</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 15px;
+            color: #333333;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #102C4E;
+            text-align: center;
+            font-size: 24px;
+        }
+        h2 {
+            color: #ff5722;
+            border-bottom: 2px solid #f0f4f8;
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #102C4E;
+            margin-top: 0;
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ol, ul {
+            padding-left: 20px;
+        }
+        /* Lesson Cards */
+        .lesson-card {
+            background-color: #fcfcfc;
+            border-left: 5px solid #ff5722;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .step-badge {
+            background-color: #ff5722;
+            color: white;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 3px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        /* CBT Quiz Styles */
+        .quiz-section {
+            background-color: #eef5fc;
+            border: 1px solid #b3d4fc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #102C4E;
+        }
+        .option-label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        /* Buttons */
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #e04c1d;
+        }
+        /* Results and Email area */
+        #quiz-result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            display: none;
+        }
+        .success-box {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .fail-box {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        #reward-section {
+            display: none;
+            margin-top: 20px;
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .courtesy-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>How to Code HTML on Your Android Phone</h1>
+    <p class="center-text" style="text-align: center;">You do not need a computer to start building websites! This guide will teach you how to write and test your code directly on your Android device.</p>
+    
+    <hr />
+
+    <h2>Your Coding Guide</h2>
+
+    <!-- Lesson 1 -->
+    <div class="lesson-card">
+        <span class="step-badge">Lesson 1</span>
+        <h3>Using Your File Manager</h3>
+        <p>Before writing code, you need a dedicated folder to keep your files organized:</p>
+        <ol>
+            <li>Open your phone's default <strong>File Manager</strong> app.</li>
+            <li>Go to your Internal Storage and create a new folder. Name it <strong>MyWebProject</strong>.</li>
+            <li>Inside this folder, create a new file and name it <strong>index.html</strong>. 
+                <br><em>Note: If your file manager does not let you change the extension from .txt to .html, you can perform this step inside the TrebEdit app.</em>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Lesson 2 -->
+    <div class="lesson-card">
+        <span class="step-badge">Lesson 2</span>
+        <h3>Coding with TrebEdit & HTML Notepad</h3>
+        <p>To type your code, you should download a mobile code editor from the Google Play Store:</p>
+        <ul>
+            <li><strong>TrebEdit:</strong> A complete web design editor. You can create projects, write tags easily with its auto-completion feature, and run code with a built-in play button.</li>
+            <li><strong>HTML Notepad:</strong> A simpler, lightweight app designed for writing quick HTML pages without unnecessary options.</li>
+        </ul>
+        <p>Open either app, select <strong>Open File</strong>, navigate to your <strong>MyWebProject</strong> folder, and open your <strong>index.html</strong> file to begin writing tags.</p>
+    </div>
+
+    <!-- Lesson 3 -->
+    <div class="lesson-card">
+        <span class="step-badge">Lesson 3</span>
+        <h3>Testing Your Work in Google Chrome</h3>
+        <p>Once you write your HTML code and save the file, you can view your creation:</p>
+        <ol>
+            <li>If using <strong>TrebEdit</strong>, you can tap the built-in <strong>Play</strong> icon in the editor to see your code run.</li>
+            <li>To open it in <strong>Google Chrome</strong>, open your File Manager, find your <code>index.html</code> file, tap it, and select <strong>Open With</strong> -> <strong>Google Chrome</strong>.</li>
+        </ol>
+    </div>
+
+    <div class="courtesy-footer">
+        <p>This class is proudly presented to you by <strong>@Austin peace ✌️</strong></p>
+    </div>
+
+    <!-- CBT Section -->
+    <div class="quiz-section">
+        <h2>HTML CBT Class Test</h2>
+        <p>Answer the following questions to test your understanding of coding on Android. Get all answers correct to receive a reward prompt!</p>
+        
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question-block">
+                <p class="question-text">1. Which file extension must you use for your homepage file?</p>
+                <label class="option-label"><input type="radio" name="q1" value="A"> A) .txt</label>
+                <label class="option-label"><input type="radio" name="q1" value="B"> B) .html</label>
+                <label class="option-label"><input type="radio" name="q1" value="C"> C) .apk</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-block">
+                <p class="question-text">2. What tool do you use in Android to create a folder for your website files?</p>
+                <label class="option-label"><input type="radio" name="q2" value="A"> A) Google Chrome</label>
+                <label class="option-label"><input type="radio" name="q2" value="B"> B) TrebEdit</label>
+                <label class="option-label"><input type="radio" name="q2" value="C"> C) File Manager app</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-block">
+                <p class="question-text">3. Which of the following is an Android app specifically built for writing HTML code?</p>
+                <label class="option-label"><input type="radio" name="q3" value="A"> A) TrebEdit</label>
+                <label class="option-label"><input type="radio" name="q3" value="B"> B) Google Chrome</label>
+                <label class="option-label"><input type="radio" name="q3" value="C"> C) WhatsApp</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-block">
+                <p class="question-text">4. How can you test your HTML file live on your phone browser?</p>
+                <label class="option-label"><input type="radio" name="q4" value="A"> A) Open the index.html file with Google Chrome</label>
+                <label class="option-label"><input type="radio" name="q4" value="B"> B) Send the file as a message</label>
+                <label class="option-label"><input type="radio" name="q4" value="C"> C) Restart the phone</label>
+            </div>
+
+            <button type="button" onclick="gradeQuiz()">Submit Answers</button>
+        </form>
+
+        <!-- Quiz Result Message -->
+        <div id="quiz-result"></div>
+
+        <!-- Hidden Reward Section (Only appears on 100% Score) -->
+        <div id="reward-section">
+            <h3>🎉 Congratulations! Perfect Score!</h3>
+            <p>You answered all questions correctly. Enter your bank details below to send them to Austin Peace.</p>
+            
+            <div class="input-group">
+                <label for="studentName">Your Name:</label>
+                <input type="text" id="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="bankName">Bank Name:</label>
+                <input type="text" id="bankName" placeholder="e.g. OPay, PalmPay, GTBank" required>
+            </div>
+
+            <div class="input-group">
+                <label for="accountNum">Account Number:</label>
+                <input type="number" id="accountNum" placeholder="Enter 10-digit account number" required>
+            </div>
+
+            <button type="button" onclick="sendDetailsEmail()">Send My Details</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Correct answers key
+    const correctAnswers = {
+        q1: 'B',
+        q2: 'C',
+        q3: 'A',
+        q4: 'A'
+    };
+
+    function gradeQuiz() {
+        const form = document.getElementById('quizForm');
+        let score = 0;
+        const totalQuestions = 4;
+
+        // Check each answer
+        for (let i = 1; i <= totalQuestions; i++) {
+            const userAnswer = form.elements['q' + i].value;
+            if (userAnswer === correctAnswers['q' + i]) {
+                score++;
+            }
+        }
+
+        const resultBox = document.getElementById('quiz-result');
+        const rewardSection = document.getElementById('reward-section');
+
+        resultBox.style.display = "block";
+
+        if (score === totalQuestions) {
+            resultBox.className = "success-box";
+            resultBox.innerHTML = `You scored ${score} out of ${totalQuestions} (100%)! Excellent job!`;
+            rewardSection.style.display = "block"; // Show the account details box
+        } else {
+            resultBox.className = "fail-box";
+            resultBox.innerHTML = `You scored ${score} out of ${totalQuestions}. Try again to get 100% and unlock the reward section!`;
+            rewardSection.style.display = "none"; // Hide if they failed
+        }
+    }
+
+    function sendDetailsEmail() {
+        const name = document.getElementById('studentName').value.trim();
+        const bank = document.getElementById('bankName').value.trim();
+        const account = document.getElementById('accountNum').value.trim();
+
+        if (!name || !bank || !account) {
+            alert("Please fill out all fields first.");
+            return;
+        }
+
+        // Construct the mail details
+        const emailReceiver = "adekemijuliana876@gmail.com";
+        const emailSubject = encodeURIComponent("Perfect Score Reward - HTML Class");
+        const emailBody = encodeURIComponent(
+            `Hello Austin,\n\nI scored 100% on the Android HTML Quiz!\nHere are my details:\n\n` +
+            `Name: ${name}\n` +
+            `Bank Name: ${bank}\n` +
+            `Account Number: ${account}\n\n` +
+            `Thank you!`
+        );
+
+        // This launches the phone's native email client with all details pre-filled
+        window.location.href = `mailto:${emailReceiver}?subject=${emailSubject}&body=${emailBody}`;
+    }
+</script>
+
+</body>
+  </html>
